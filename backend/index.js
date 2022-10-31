@@ -18,10 +18,9 @@ app.get('/',(req,res) => {
     res.send('hello')
 })
 
-const CON_URL = 'mongodb+srv://ssquare0710:Shwet@cluster0.3zwlgpb.mongodb.net/?retryWrites=true&w=majority'
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect(CON_URL , { useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(process.env.CON_URL , { useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => app.listen(PORT, () => console.log(`Server running on port ${PORT}`)))
     .catch((err) => console.log(err.message));
 
