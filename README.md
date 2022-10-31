@@ -5,3 +5,6 @@
 - Frontend : React , Redux , Material UI , CSS
 - Backend : Node.js , Express 
 - Database : MongoDB
+
+
+## Live application link : https://shwetmernstackapp.netlify.app/
